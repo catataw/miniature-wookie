@@ -1,8 +1,8 @@
 # miniature-wookie
 Generic Node Development Environment
+I built it mostly for my own use, but feel free to use it!
 
-
-# What are Wookies?
+## What are Wookies?
 
 Wookiees are devoted, loyal friends and are very distrustful of strangers.
 
