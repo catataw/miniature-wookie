@@ -8,29 +8,29 @@ EXPOSE 22
 
 #Commands to Stage OS
 RUN echo "Updating OS" && \
-    sudo -E bash -c "apt-get update -qq" && \
-    sudo -E bash -c "apt-get upgrade -qq --force-yes" && \
-    sudo -E bash -c "apt-get install -qq --force-yes build-essential" && \
+    bash -c "apt-get update -qq" && \
+    bash -c "apt-get upgrade -qq --force-yes" && \
+    bash -c "apt-get install -qq --force-yes build-essential" && \
     echo "OS Updated, installing software" && \
     echo "...."
 
 #Commands to Stage App
 RUN echo "Installing git" && \
-    sudo -E bash -c "apt-get install -qq --force-yes git" && \
+    bash -c "apt-get install -qq --force-yes git" && \
     echo "git Installed" && \
     echo "...."
 
 RUN echo "Installing node.js" && \
-    sudo -E bash -c "apt-get install -qq --force-yes curl" && \
-    sudo -E bash -c "curl -sL https://deb.nodesource.com/setup | sudo bash -" && \
-    sudo -E bash -c "apt-get install -qq --force-yes nodejs" && \
-    sudo -E bash -c "npm cache clean -f" && \
-    sudo -E bash -c "npm install -g n" && \
-    sudo -E bash -c "n stable" && \
+    bash -c "apt-get install -qq --force-yes curl" && \
+    bash -c "curl -sL https://deb.nodesource.com/setup | bash -" && \
+    bash -c "apt-get install -qq --force-yes nodejs" && \
+    bash -c "npm cache clean -f" && \
+    bash -c "npm install -g n" && \
+    bash -c "n stable" && \
     echo "node.js Installed" && \
     echo "...."
 
 RUN echo "Installing grunt" && \
-    sudo -E bash -c "npm install -g grunt-cli" && \
+    bash -c "npm install -g grunt-cli" && \
     echo "grunt Installed" && \
     echo "...."
