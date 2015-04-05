@@ -1,2 +1,2 @@
 # miniature-wookie
-Generic Node Development Environmen
+Generic Node Development Environment
