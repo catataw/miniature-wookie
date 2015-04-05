@@ -22,7 +22,7 @@ Run `http://container-ip:5050` in a browser, or ssh to `ssh root@container-ip:22
 
     docker run -d --name <name-of-proccess> -p 5050:5050 alexwitherspoon/miniature-wookie
 
-Then go to `http://localhost:8080` or `http://host-ip:8080` in a browser.
+Then go to `http://localhost:5050` or `http://host-ip:5050` in a browser.
 
 Or to run it long time:
 
