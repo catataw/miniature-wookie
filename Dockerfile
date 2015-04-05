@@ -13,11 +13,13 @@ EXPOSE 22
 RUN echo "Updating OS" && \
     bash -c "apt-get update -qq" && \
     bash -c "apt-get upgrade -qq --force-yes" && \
-    bash -c "apt-get install -qq --force-yes ssh build-essential" && \
+    bash -c "apt-get install -qq --force-yes build-essential" && \
     echo "OS Updated, installing software" && \
     echo "...."
     
 RUN echo "Enabling SSH" && \
+    bash -c "apt-get update -qq" && \
+    bash -c "apt-get install -qq --force-yes ssh" && \
     bash -c "mkdir /var/run/sshd" && \
     bash -c "echo 'root:wookie' | chpasswd" && \
     bash -c "sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/' /etc/ssh/sshd_config" && \
