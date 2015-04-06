@@ -42,3 +42,17 @@ Then if developing you may connect either using SSH (default U: root P: wookie),
 OR
 
     ssh -p 222 -l root <container-ip>
+
+## Things got out of hand, how do I kill it?
+
+You can run this to fight the bear!
+
+Show all running docker instances
+
+    docker -ps -a
+
+When you've found the bear's container id, run this:
+
+    docker kill <container-id>
+    docker rm <container-id>
+    docker rmi <container-id>
