@@ -45,7 +45,7 @@ Just be carefull, wookies are just as likely to take your arms off!
 
 Show all running docker instances
 
-    docker -ps -a
+    docker ps -a
 
 When you've found the bear's container id, run this:
 
