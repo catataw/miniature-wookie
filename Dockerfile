@@ -9,7 +9,12 @@ EXPOSE 5050
 RUN echo "Updating OS" && \
     bash -c "apt-get update -qq" && \
     bash -c "apt-get upgrade -qq --force-yes" && \
-    bash -c "apt-get install -qq --force-yes build-essential" && \
+    echo "OS Updated, installing software" && \
+    echo "...."
+
+RUN echo "Installing Base Utilties" && \
+    bash -c "apt-get update -qq" && \
+    bash -c "apt-get install -qq --force-yes build-essential nano" && \
     echo "OS Updated, installing software" && \
     echo "...."
 
