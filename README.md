@@ -30,4 +30,4 @@ Or to run it long time:
     
 If you want to run it and develop using it, run this:
 
-    docker exec -it <containerIdOrName> bash
+    docker run -i -t --entrypoint /bin/bash alexwitherspoon/miniature-wookie
