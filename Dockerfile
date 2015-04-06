@@ -46,4 +46,4 @@ RUN echo "Installing grunt" && \
     echo "grunt Installed" && \
     echo "...."
     
-CMD ["/etc/init.d/ssh start && sleep 365d"]
+CMD ["/etc/init.d/ssh start && sleep 7d"]
