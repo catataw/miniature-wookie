@@ -32,6 +32,9 @@ If you want to run it and develop using it, run this:
 
     docker run -i -t -p 5050:5050 -p 222:22 --entrypoint /bin/bash alexwitherspoon/miniature-wookie
     
+
+## How to Connect to it!
+
 Then if developing you may connect either using SSH (default U: root P: wookie), or Docker Attach.
 
     docker attach <name-of-proccess>
