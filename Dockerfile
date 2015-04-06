@@ -46,4 +46,4 @@ RUN echo "Installing grunt" && \
     echo "grunt Installed" && \
     echo "...."
     
-CMD ["/usr/sbin/sshd", "-D"]
+CMD ["/etc/init.d/ssh start && sleep 365d"]
