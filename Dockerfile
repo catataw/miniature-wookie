@@ -6,7 +6,7 @@ FROM debian:wheezy
 EXPOSE 5050
 EXPOSE 22
 
-#Commands to Stage OS
+# Commands to Stage OS
 RUN echo "Updating OS" && \
     bash -c "apt-get update -qq" && \
     bash -c "apt-get upgrade -qq --force-yes" && \
@@ -20,7 +20,7 @@ RUN echo "Installing Base Utilties" && \
     echo "Base Utilities Installed" && \
     echo "...."
 
-#Commands to Stage App
+# Commands to Stage App
 RUN echo "Installing git" && \
     bash -c "apt-get install -qq --force-yes git" && \
     echo "git Installed" && \
@@ -45,5 +45,8 @@ RUN echo "Installing grunt" && \
     bash -c "npm install -g grunt-cli" && \
     echo "grunt Installed" && \
     echo "...."
-    
-CMD ["/etc/init.d/ssh start && sleep 7d"]
+
+# Commands to Run App
+CMD bash -c "/etc/init.d/ssh start" && \
+    bash -c "/etc/init.d/mongodb start" && \
+    bash -c "sleep 1d"
