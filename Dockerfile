@@ -14,7 +14,7 @@ RUN echo "Updating OS" && \
 
 RUN echo "Installing Base Utilties" && \
     bash -c "apt-get update -qq" && \
-    bash -c "apt-get install -qq --force-yes build-essential nano" && \
+    bash -c "apt-get install -qq --force-yes build-essential nano mongodb" && \
     echo "OS Updated, installing software" && \
     echo "...."
 
