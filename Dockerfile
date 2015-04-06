@@ -4,6 +4,7 @@ FROM debian:wheezy
 
 # Network Ports Used by App
 EXPOSE 5050
+EXPOSE 22
 
 #Commands to Stage OS
 RUN echo "Updating OS" && \
@@ -44,3 +45,5 @@ RUN echo "Installing grunt" && \
     bash -c "npm install -g grunt-cli" && \
     echo "grunt Installed" && \
     echo "...."
+    
+CMD ["/usr/sbin/sshd", "-D"]
