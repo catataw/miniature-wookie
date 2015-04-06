@@ -45,7 +45,7 @@ OR
 
 ## Things got out of hand, how do I kill it?
 
-You can run this to fight the bear!
+Just be carefull, wookies are just as likely to take your arms off!
 
 Show all running docker instances
 
