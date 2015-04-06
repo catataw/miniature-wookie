@@ -30,4 +30,4 @@ Or to run it long time:
     
 If you want to run it and develop using it, run this:
 
-    docker run -i -t --entrypoint /bin/bash alexwitherspoon/miniature-wookie
+    docker run -i -t -p 5050:5050 -p 222:22 --entrypoint /bin/bash alexwitherspoon/miniature-wookie
