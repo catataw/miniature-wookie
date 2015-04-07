@@ -34,7 +34,7 @@ RUN echo "Installing Web Editor" && \
 # Commands to Stage App  
 RUN echo "Installing mongodb" && \
     bash -c "apt-get install -qq --force-yes mongodb" && \
-    echo "git Installed" && \
+    echo "mongodb Installed" && \
     echo "...."
 
 RUN echo "Installing node.js" && \
