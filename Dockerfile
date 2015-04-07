@@ -4,6 +4,7 @@ FROM debian:wheezy
 
 # Network Ports Used by App
 EXPOSE 5050
+EXPOSE 80
 EXPOSE 22
 
 # Commands to Stage OS
@@ -18,6 +19,16 @@ RUN echo "Installing Base Utilties" && \
     bash -c "apt-get install -qq --force-yes build-essential nano ssh" && \
     bash -c "echo 'root:wookie' | chpasswd" && \
     echo "Base Utilities Installed" && \
+    echo "...."
+    
+RUN echo "Installing Web Editor" && \
+    bash -c "apt-get update -qq" && \
+    bash -c "apt-get install -qq --force-yes lighttpd php5-common php5-cgi php5" && \
+    bash -c "lighttpd-enable-mod fastcgi" && \
+    bash -c "lighttpd-enable-mod fastcgi-php" && \
+    bash -c "rm -Rf /var/www/*" && \
+    bash -c "git clone https://github.com/Codiad/Codiad.git /var/www" && \
+    echo "Web Editor Installed" && \
     echo "...."
 
 # Commands to Stage App
@@ -48,5 +59,6 @@ RUN echo "Installing grunt" && \
 
 # Commands to Run App
 CMD bash -c "/etc/init.d/ssh start" && \
+    bash -c "/etc/init.d/lighttpd start" && \
     bash -c "/etc/init.d/mongodb start" && \
-    bash -c "sleep 1d"
+    bash -c "sleep 7d"
