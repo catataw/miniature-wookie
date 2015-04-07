@@ -30,7 +30,6 @@ RUN echo "Installing Web Editor" && \
     bash -c "git clone https://github.com/alexwitherspoon/Codiad /var/www" && \
     bash -c "cp /var/www/config.example.php /var/www/config.php" && \
     bash -c "chown -R www-data:www-data -R /var/www/" && \
-    bash -c "chmod -R 0777 /var/www/*" && \
     bash -c "chmod -R 0777 /opt" && \
     echo "Web Editor Installed" && \
     echo "...."
