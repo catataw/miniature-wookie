@@ -28,6 +28,10 @@ RUN echo "Installing Web Editor" && \
     bash -c "lighttpd-enable-mod fastcgi-php" && \
     bash -c "rm -Rf /var/www/*" && \
     bash -c "git clone https://github.com/Codiad/Codiad.git /var/www" && \
+    bash -c "cp /var/www/config.example.php /var/www/config.php" && \
+    bash -c "chmod -R 0777 /var/www/*" && \
+    bash -c "sed -i 's/www-data/root/g' /etc/lighttpd/lighttpd.conf" && \
+    bash -c "sed -i 's/80/5051/g' /etc/lighttpd/lighttpd.conf" && \
     echo "Web Editor Installed" && \
     echo "...."
 
