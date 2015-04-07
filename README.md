@@ -1,7 +1,9 @@
 # miniature-wookie
 Generic Node Development Environment
 I built it mostly for my own use, but feel free to use it! 
-You can find the dockerhub repo here: [https://registry.hub.docker.com/u/alexwitherspoon/miniature-wookie/](https://registry.hub.docker.com/u/alexwitherspoon/miniature-wookie/)
+Github repo: [https://github.com/alexwitherspoon/miniature-wookie](https://github.com/alexwitherspoon/miniature-wookie)
+Dockerhub repo [https://registry.hub.docker.com/u/alexwitherspoon/miniature-wookie/](https://registry.hub.docker.com/u/alexwitherspoon/miniature-wookie/)
+
 
 ## What are Wookies?
 
