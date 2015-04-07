@@ -4,7 +4,7 @@ FROM debian:wheezy
 
 # Network Ports Used by App
 EXPOSE 5050
-EXPOSE 5051
+EXPOSE 80
 EXPOSE 22
 
 # Commands to Stage OS
@@ -31,7 +31,6 @@ RUN echo "Installing Web Editor" && \
     bash -c "cp /var/www/config.example.php /var/www/config.php" && \
     bash -c "chmod -R 0777 /var/www/*" && \
     bash -c "sed -i 's/www-data/root/g' /etc/lighttpd/lighttpd.conf" && \
-    bash -c "sed -i 's/80/5051/g' /etc/lighttpd/lighttpd.conf" && \
     echo "Web Editor Installed" && \
     echo "...."
 
