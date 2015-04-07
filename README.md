@@ -37,13 +37,16 @@ Then if developing you may connect either using SSH (default U: root P: wookie),
     
 OR
 
-    ssh -p 222 -l root <container-ip>
-    
+SSH in with user: 'root', and password: 'wookie', on port 222(or whatever you specify.)
+   
+   ssh -p 222 -l root <container-ip>
+   
 OR
 
-Use the WebIDE found on port 80
+Use the WebIDE found on port 80, log in with user: 'root', and password: 'wookie'
 
    `http://container-ip`
+   
 
 ## Things got out of hand, how do I kill it?
 
