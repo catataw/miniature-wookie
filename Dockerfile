@@ -29,8 +29,9 @@ RUN echo "Installing Web Editor" && \
     bash -c "rm -Rf /var/www/*" && \
     bash -c "git clone https://github.com/Codiad/Codiad.git /var/www" && \
     bash -c "cp /var/www/config.example.php /var/www/config.php" && \
+    bash -c "chown -R www-data:www-data -R /var/www/" && \
     bash -c "chmod -R 0777 /var/www/*" && \
-    bash -c "sed -i 's/www-data/root/g' /etc/lighttpd/lighttpd.conf" && \
+    bash -c "chmod -R 0777 /opt" && \
     echo "Web Editor Installed" && \
     echo "...."
 
@@ -59,4 +60,4 @@ RUN echo "Installing grunt" && \
 CMD bash -c "/etc/init.d/ssh start" && \
     bash -c "/etc/init.d/lighttpd start" && \
     bash -c "/etc/init.d/mongodb start" && \
-    bash -c "sleep 7d"
+    bash -c "sleep 365d"
