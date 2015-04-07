@@ -16,7 +16,7 @@ RUN echo "Updating OS" && \
 
 RUN echo "Installing Base Utilties" && \
     bash -c "apt-get update -qq" && \
-    bash -c "apt-get install -qq --force-yes build-essential nano ssh" && \
+    bash -c "apt-get install -qq --force-yes build-essential git nano ssh" && \
     bash -c "echo 'root:wookie' | chpasswd" && \
     echo "Base Utilities Installed" && \
     echo "...."
@@ -31,12 +31,7 @@ RUN echo "Installing Web Editor" && \
     echo "Web Editor Installed" && \
     echo "...."
 
-# Commands to Stage App
-RUN echo "Installing git" && \
-    bash -c "apt-get install -qq --force-yes git" && \
-    echo "git Installed" && \
-    echo "...."
-    
+# Commands to Stage App  
 RUN echo "Installing mongodb" && \
     bash -c "apt-get install -qq --force-yes mongodb" && \
     echo "git Installed" && \
