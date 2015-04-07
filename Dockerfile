@@ -23,7 +23,7 @@ RUN echo "Installing Base Utilties" && \
     
 RUN echo "Installing Web Editor" && \
     bash -c "apt-get update -qq" && \
-    bash -c "apt-get install -qq --force-yes lighttpd php5-common php5-cgi php5" && \
+    bash -c "apt-get install -qq --force-yes git lighttpd php5-common php5-cgi php5" && \
     bash -c "lighttpd-enable-mod fastcgi" && \
     bash -c "lighttpd-enable-mod fastcgi-php" && \
     bash -c "rm -Rf /var/www/*" && \
