@@ -20,13 +20,13 @@ Include the following at the top of your project.
 
 Run `http://container-ip:5050` in a browser, or ssh to `ssh root@container-ip:22`
 
-    docker run -d -p 222:22 -p 5050:5050 alexwitherspoon/miniature-wookie
+    docker run -d -p 5050:5050 -p 80:80 -p 222:22 alexwitherspoon/miniature-wookie
 
 Then go to `http://localhost:5050` or `http://host-ip:5050` in a browser.
     
 If you want to run it and develop using it, run this:
 
-    docker run -i -t -p 5050:5050 -p 222:22 --entrypoint /bin/bash alexwitherspoon/miniature-wookie
+    docker run -i -t -p 5050:5050 -p 80:80 -p 222:22 --entrypoint /bin/bash alexwitherspoon/miniature-wookie
     
 
 ## How to Connect to it!
