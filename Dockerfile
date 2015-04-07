@@ -4,7 +4,7 @@ FROM debian:wheezy
 
 # Network Ports Used by App
 EXPOSE 5050
-EXPOSE 80
+EXPOSE 5051
 EXPOSE 22
 
 # Commands to Stage OS
