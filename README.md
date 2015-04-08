@@ -19,24 +19,17 @@ I built it mostly for my own use, but feel free to use it!
 
 # How to use this image
 
-## Create a `Dockerfile` in your project
+## Use for your own `Dockerfile` in your own project.
 
 Include the following at the top of your project.
 
     FROM alexwitherspoon:miniature-wookie
 
-## How to Run this Thing
+## Run this image on a docker host
 
-Run `http://container-ip:5050` in a browser, or ssh to `ssh root@container-ip:22`
-
+    docker pull alexwitherspoon/miniature-wookie
     docker run -d -p 5050:5050 -p 80:80 -p 222:22 alexwitherspoon/miniature-wookie
 
-Then go to `http://localhost:5050` or `http://host-ip:5050` in a browser.
-    
-If you want to run it and develop using it, run this:
-
-    docker run -i -t -p 5050:5050 -p 80:80 -p 222:22 --entrypoint /bin/bash alexwitherspoon/miniature-wookie
-    
 ## How to Connect to it!
 
 Then if developing you may connect either using SSH (default U: root P: wookie), or Docker Attach.
