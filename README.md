@@ -19,7 +19,7 @@ I built it mostly for my own use, but feel free to use it!
 
 # How to use this image
 
-## Use for your own `Dockerfile` in your own project.
+## Use for your own Dockerfile in your own project.
 
 Include the following at the top of your project.
 
