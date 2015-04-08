@@ -40,7 +40,7 @@ OR
 
 SSH in with user: 'root', and password: 'wookie', on port 222(or whatever you specify.)
    
-   ssh -p 222 -l root <container-ip>
+    ssh -p 222 -l root (container-ip)
    
 OR
 
