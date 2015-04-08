@@ -6,7 +6,7 @@ I built it mostly for my own use, but feel free to use it!
 
 **Dockerhub repo:** [alexwitherspoon/miniature-wookie](https://registry.hub.docker.com/u/alexwitherspoon/miniature-wookie/)
 
-![](http://www.alexwitherspoon.com/content/images/2015/04/2015-04-07-17_11_05-CODIAD.png =380x450)
+![](https://alexwitherspoon.ghost.io/content/images/2015/04/2015-04-07-17_11_05-CODIAD-1.png)
 
 
 ## What are Wookies?
