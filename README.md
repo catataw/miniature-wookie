@@ -7,7 +7,7 @@ Dockerhub repo [https://registry.hub.docker.com/u/alexwitherspoon/miniature-wook
 
 ## What are Wookies?
 
-Wookiees are devoted, loyal friends and are very distrustful of strangers.
+"Wookiees are devoted, loyal friends and are very distrustful of strangers."
 
 > [wikipedia.org/wiki/Wookiee](http://en.wikipedia.org/wiki/Wookiee)
 
