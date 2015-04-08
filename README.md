@@ -2,11 +2,11 @@
 Generic Node Development Environment
 I built it mostly for my own use, but feel free to use it! 
 
-<img src="https://alexwitherspoon.ghost.io/content/images/2015/04/2015-04-07-17_11_05-CODIAD.png" height="450" />
-
 **Github repo:** [alexwitherspoon/miniature-wookie](https://github.com/alexwitherspoon/miniature-wookie)
 
 **Dockerhub repo:** [alexwitherspoon/miniature-wookie](https://registry.hub.docker.com/u/alexwitherspoon/miniature-wookie/)
+
+<img src="https://alexwitherspoon.ghost.io/content/images/2015/04/2015-04-07-17_11_05-CODIAD.png" height="450" />
 
 
 ## What are Wookies?
