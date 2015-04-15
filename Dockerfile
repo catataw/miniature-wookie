@@ -11,6 +11,8 @@ EXPOSE 22
 RUN echo "Updating OS" && \
     bash -c "apt-get update -qq" && \
     bash -c "apt-get upgrade -qq --force-yes" && \
+    bash -c "apt-get autoremove -qq --force-yes" && \
+    bash -c "apt-get clean -qq --force-yes" && \
     echo "OS Updated, installing software" && \
     echo "...."
 
@@ -18,6 +20,8 @@ RUN echo "Installing Base Utilties" && \
     bash -c "apt-get update -qq" && \
     bash -c "apt-get install -qq --force-yes build-essential git nano ssh" && \
     bash -c "echo 'root:wookie' | chpasswd" && \
+    bash -c "apt-get autoremove -qq --force-yes" && \
+    bash -c "apt-get clean -qq --force-yes" && \
     echo "Base Utilities Installed" && \
     echo "...."
     
@@ -30,12 +34,16 @@ RUN echo "Installing Web Editor" && \
     bash -c "git clone https://github.com/alexwitherspoon/Codiad /var/www" && \
     bash -c "chown -R www-data:www-data -R /var/www/" && \
     bash -c "chmod -R 0777 /opt" && \
+    bash -c "apt-get autoremove -qq --force-yes" && \
+    bash -c "apt-get clean -qq --force-yes" && \
     echo "Web Editor Installed" && \
     echo "...."
 
 # Commands to Stage App  
 RUN echo "Installing mongodb" && \
     bash -c "apt-get install -qq --force-yes mongodb" && \
+    bash -c "apt-get autoremove -qq --force-yes" && \
+    bash -c "apt-get clean -qq --force-yes" && \
     echo "mongodb Installed" && \
     echo "...."
 
@@ -46,6 +54,8 @@ RUN echo "Installing node.js" && \
     bash -c "npm cache clean -f" && \
     bash -c "npm install -g n" && \
     bash -c "n stable" && \
+    bash -c "apt-get autoremove -qq --force-yes" && \
+    bash -c "apt-get clean -qq --force-yes" && \
     echo "node.js Installed" && \
     echo "...."
 
