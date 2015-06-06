@@ -1,19 +1,11 @@
 # Node Development Server
 # https://github.com/alexwitherspoon/miniature-wookie
-FROM debian:wheezy
+FROM alexwitherspoon/debian
 
 # ENVs
 ENV LC_ALL en_US.UTF-8
 
 # Commands to Stage OS
-RUN echo "Updating OS" && \
-    bash -c "apt-get update -qq" && \
-    bash -c "apt-get upgrade -qq --force-yes" && \
-    bash -c "apt-get autoremove -qq --force-yes" && \
-    bash -c "apt-get clean -qq --force-yes" && \
-    echo "OS Updated, installing software" && \
-    echo "...."
-
 RUN echo "Installing Base Utilties" && \
     bash -c "apt-get update -qq" && \
     bash -c "apt-get install -qq --force-yes build-essential git nano ssh" && \
