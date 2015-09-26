@@ -2,6 +2,8 @@
 # https://github.com/alexwitherspoon/miniature-wookie
 FROM alexwitherspoon/debian
 
+MAINTAINER Alex Witherspoon <alex@alexwitherspoon.com>
+
 # ENVs
 ENV LC_ALL en_US.UTF-8
 
