@@ -7,7 +7,7 @@ I built it mostly for my own use, but feel free to use it!
 * Dockerhub repo: [alexwitherspoon/miniature-wookie](https://registry.hub.docker.com/u/alexwitherspoon/miniature-wookie/)
 
 ### Bundled Apps
-* Debian 7 Wheezy
+* Debian 8
 * Redis
 * MongoDB
 * Postgres
