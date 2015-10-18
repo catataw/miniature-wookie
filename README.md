@@ -11,9 +11,9 @@ I built it mostly for my own use, but feel free to use it!
 * Grunt CLI
 * Bower
 
-**Github repo:** [alexwitherspoon/miniature-wookie](https://github.com/alexwitherspoon/miniature-wookie)
-
-**Dockerhub repo:** [alexwitherspoon/miniature-wookie](https://registry.hub.docker.com/u/alexwitherspoon/miniature-wookie/)
+* [![](https://badge.imagelayers.io/alexwitherspoon/debian.svg)](https://imagelayers.io/?images=alexwitherspoon/debian 'Get your own badge on imagelayers.io')
+* Github repo: [alexwitherspoon/miniature-wookie](https://github.com/alexwitherspoon/miniature-wookie)
+* Dockerhub repo: [alexwitherspoon/miniature-wookie](https://registry.hub.docker.com/u/alexwitherspoon/miniature-wookie/)
 
 ![](https://alexwitherspoon.ghost.io/content/images/2015/04/2015-04-07-17_11_05-CODIAD-1.png)
 
