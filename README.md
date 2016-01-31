@@ -4,7 +4,7 @@ I built it mostly for my own use, but feel free to use it!
 
 * [![](https://badge.imagelayers.io/alexwitherspoon/miniature-wookie.svg)](https://imagelayers.io/?images=alexwitherspoon/miniature-wookie 'Get your own badge on imagelayers.io')
 * Github repo: [alexwitherspoon/miniature-wookie](https://github.com/alexwitherspoon/miniature-wookie)
-* Dockerhub repo: [alexwitherspoon/miniature-wookie](https://registry.hub.docker.com/u/alexwitherspoon/miniature-wookie/)
+* Dockerhub repo: [alexwitherspoon/miniature-wookie](https://hub.docker.com/r/alexwitherspoon/miniature-wookie/)
 
 ### Bundled Apps
 * Debian 8
